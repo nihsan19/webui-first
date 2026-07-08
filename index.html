@@ -1,21 +1,279 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GET STYLISH WITH US | Home</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body { bg-color: #121212; color: #fff; background: #0f0f0f; }
+header { background: #1a1a1a; padding: 20px; text-align: center; border-bottom: 3px solid #d4af37; }
+h1 { font-size: 3.5rem; font-weight: 900; letter-spacing: 2px; color: #fff; margin-bottom: 5px; }
+.subtitle { font-size: 1.2rem; color: #d4af37; font-style: italic; }
+nav { display: flex; justify-content: center; background: #222; padding: 15px; }
+nav a { color: #fff; text-decoration: none; margin: 0 20px; font-weight: 600; text-transform: uppercase; transition: 0.3s; }
+nav a:hover, nav a.active { color: #37d4d4; }
+.hero { display: flex; height: 70vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=80') center/cover; align-items: center; justify-content: center; text-align: center; }
+.hero-text h2 { font-size: 3rem; margin-bottom: 20px; }
+.promo-section { max-width: 900px; margin: 50px auto; padding: 30px; background: #1a1a1a; border-left: 5px solid #d4af37; border-radius: 4px; text-align: center; }
+.promo-badge { background: #d4af37; color: #000; padding: 5px 15px; font-weight: bold; border-radius: 3px; display: inline-block; margin-bottom: 15px; }
+.btn { display: inline-block; background: #d4af37; color: #000; padding: 12px 30px; font-weight: bold; text-decoration: none; border-radius: 5px; margin-top: 20px; transition: 0.3s; }
+.btn:hover { background: #fff; color: #000; }
+footer { background: #111; text-align: center; padding: 20px; color: #777; font-size: 0.9rem; margin-top: 5px; }
+</style></head><body>
 
-    </head>
-<body>
-    <h1>hello world</h1>
-    <main>
-        <section></section>
-        <section></section>
-        <section></section>
-    </main>
-        
-    <header></header>
+<header>
+<h1>GET STYLISH WITH US</h1>
+<div class="subtitle">Hair Styling by the Most Skillful Barbers & Premium Fashion</div>
+</header>
 
-    <footer></footer>
+<nav>
+<a href="index.html" class="active">Home</a>
+<a href="hair.html">Hair Salon</a>
+<a href="fashion.html">Clothes & Shoes</a>
+<a href="eyewear.html">Glasses</a>
+<a href="booking.html">Booking & Contact</a>
+</nav>
 
-    <section></section>
+<section class="hero">
+<div class="hero-text">
+<h2>Where Style Meets Perfection</h2>
+<p>Step in for a sharp trim. Walk out with a complete wardrobe upgrade.</p>
+<a href="booking.html" class="btn">Book Appointment Online</a>
+</div>
+</section>
 
-</body>
-    </html>
+<section class="promo-section">
+<span class="promo-badge">SPECIAL OFFER</span>
+<h3>Marriage Ceremony Package</h3>
+<p style="margin: 15px 0; color: #ccc; line-height: 1.6;">
+Groom & Bride Elegance Package: Includes full signature premium grooming for the groom, elegant formal bridal hair styling, and a personal wardrobe consultation + 15% off any clothing/shoe purchases.
+</p>
+<p style="font-size: 1.5rem; color: #d4af37; font-weight: bold;">Special Price: ¥45,000 <span style="text-decoration: line-through; font-size: 1rem; color: #777;">(Regular: ¥60,000)</span></p>
+<a href="booking.html" class="btn">Reserve Special Package</a>
+</section>
+
+<footer>
+&copy; 2026 GET STYLISH WITH US. All Rights Reserved.
+</footer></body></html>
+💇‍♂️ 2. hair.html (Salon Layout)
+HTML
+
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GET STYLISH WITH US | Hair Salon</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+body { background: #0f0f0f; color: #fff; }
+header { background: #1a1a1a; padding: 20px; text-align: center; border-bottom: 3px solid #d4af37; }
+h1 { font-size: 3.5rem; font-weight: 900; }
+nav { display: flex; justify-content: center; background: #222; padding: 15px; }
+nav a { color: #fff; text-decoration: none; margin: 0 20px; font-weight: 600; text-transform: uppercase; }
+nav a:hover, nav a.active { color: #d4af37; }
+.container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+h2 { text-align: center; margin: 40px 0 20px; color: #d4af37; border-bottom: 1px solid #333; padding-bottom: 10px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+.card { background: #1a1a1a; border-radius: 8px; overflow: hidden; border: 1px solid #222; text-align: center; padding-bottom: 20px; transition: 0.3s; }
+.card:hover { transform: translateY(-5px); border-color: #d4af37; }
+.card img { width: 100%; height: 250px; object-fit: cover; }
+.card h3 { margin: 15px 0 5px; font-size: 1.2rem; }
+.card .price { color: #d4af37; font-weight: bold; font-size: 1.1rem; }
+</style></head><body>
+
+<header><h1>GET STYLISH WITH US</h1></header>
+<nav>
+<a href="index.html">Home</a>
+<a href="hair.html" class="active">Hair Salon</a>
+<a href="fashion.html">Clothes & Shoes</a>
+<a href="eyewear.html">Glasses</a>
+<a href="booking.html">Booking & Contact</a>
+</nav>
+
+<div class="container">
+<h2>Men's Premium Hairstyles</h2>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=400&fit=crop&q=60" alt="Pompadour"><h3>The Classic Pompadour</h3><p class="price">¥4,500</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=400&fit=crop&q=60" alt="Fade"><h3>Modern Skin Fade</h3><p class="price">¥4,000</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1605497746444-ac9da5848ba7?w=400&fit=crop&q=60" alt="Crop"><h3>Textured French Crop</h3><p class="price">¥4,200</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1517832606589-7a598bb60b42?w=400&fit=crop&q=60" alt="Taper"><h3>Taper Fade with Quiff</h3><p class="price">¥4,500</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=400&fit=crop&q=60" alt="Buzz"><h3>Buzz Cut Line Design</h3><p class="price">¥3,000</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&fit=crop&q=60" alt="Slick Back"><h3>Long Slick Back</h3><p class="price">¥5,000</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=400&fit=crop&q=60" alt="Undercut"><h3>Casual Messy Undercut</h3><p class="price">¥4,300</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&fit=crop&q=60" alt="Business"><h3>Classic Side Part</h3><p class="price">¥4,000</p></div>
+</div>
+
+<h2>Women's Designer Hairstyles</h2>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1595959183077-51a7c96f4ab0?w=400&fit=crop&q=60" alt="Pixie"><h3>Classic Pixie Cut</h3><p class="price">¥5,500</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?w=400&fit=crop&q=60" alt="Bob"><h3>Blunt Textured Bob</h3><p class="price">¥6,000</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=400&fit=crop&q=60" alt="Bangs"><h3>Layers & Curtain Bangs</h3><p class="price">¥7,000</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?w=400&fit=crop&q=60" alt="Balayage"><h3>Balayage Color & Style</h3><p class="price">¥14,000</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=400&fit=crop&q=60" alt="Waves"><h3>Soft Beach Waves / Perm</h3><p class="price">¥11,000</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=400&fit=crop&q=60" alt="Lob"><h3>Asymmetrical Lob</h3><p class="price">¥6,500</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&fit=crop&q=60" alt="Updo"><h3>Elegant Event Updo</h3><p class="price">¥8,000</p></div>
+</div>
+</div></body></html>
+👕 3. fashion.html (Clothes & Shoes Page)
+HTML
+
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GET STYLISH WITH US | Fashion</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+body { background: #0f0f0f; color: #fff; }
+header { background: #1a1a1a; padding: 20px; text-align: center; border-bottom: 3px solid #d4af37; }
+h1 { font-size: 3.5rem; font-weight: 900; }
+nav { display: flex; justify-content: center; background: #222; padding: 15px; }
+nav a { color: #fff; text-decoration: none; margin: 0 20px; font-weight: 600; text-transform: uppercase; }
+nav a:hover, nav a.active { color: #d4af37; }
+.container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+h2 { margin: 30px 0; color: #d4af37; text-align: center; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 5px; }
+.item-card { background: #1a1a1a; border-radius: 6px; overflow: hidden; transition: 0.3s; }
+.item-card:hover { border: 1px solid #d4af37; }
+.item-card img { width: 100%; height: 350px; object-fit: cover; }
+.info { padding: 15px; text-align: center; }
+.info h3 { margin-bottom: 8px; font-size: 1.2rem; }
+.info p { font-size: 0.9rem; color: #aaa; margin-bottom: 10px; }
+.price { color: #d4af37; font-weight: bold; font-size: 1.2rem; }
+</style></head><body>
+
+<header><h1>GET STYLISH WITH US</h1></header>
+<nav>
+<a href="index.html">Home</a>
+<a href="hair.html">Hair Salon</a>
+<a href="fashion.html" class="active">Clothes & Shoes</a>
+<a href="eyewear.html">Glasses</a>
+<a href="booking.html">Booking & Contact</a>
+</nav>
+
+<div class="container">
+<h2>Premium Men's Wear</h2>
+<div class="grid">
+<div class="item-card"><img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=400&fit=crop&q=60" alt="Blazer"><div class="info"><h3>Tailored Blazer</h3><p>Slim fit structure, ideal for business casual or smart social gatherings.</p><div class="price">¥18,000</div></div></div>
+<div class="item-card"><img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=400&fit=crop&q=60" alt="Hoodie"><div class="info"><h3>Oversized Urban Hoodie</h3><p>Ultra-heavyweight premium cotton with minimal stitching.</p><div class="price">¥8,500</div></div></div>
+<div class="item-card"><img src="https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=400&fit=crop&q=60" alt="Jacket"><div class="info"><h3>Vintage Denim Jacket</h3><p>Classic distressed wash with durable reinforced premium buttons.</p><div class="price">¥12,000</div></div></div>
+</div>
+
+<h2>Curated Men's Footwear</h2>
+<div class="grid">
+<div class="item-card"><img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&fit=crop&q=60" alt="Sneakers"><div class="info"><h3>Minimalist White Sneakers</h3><p>Genuine Italian calf leather finish with vulcanized rubber soles.</p><div class="price">¥14,000</div></div></div>
+<div class="item-card"><img src="https://images.unsplash.com/photo-1638247025967-b4e38f68931a?w=400&fit=crop&q=60" alt="Boots"><div class="info"><h3>Suede Chelsea Boots</h3><p>Rich charcoal tan suede complete with high elastic pull tabs.</p><div class="price">¥22,000</div></div></div>
+<div class="item-card"><img src="https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=400&fit=crop&q=60" alt="Oxfords"><div class="info"><h3>Leather Oxford Shoes</h3><p>Handcrafted build for wedding ensembles and high-end styling.</p><div class="price">¥26,000</div></div></div>
+</div>
+</div></body></html>
+👓 4. eyewear.html (Glasses Page)
+HTML
+
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GET STYLISH WITH US | Eyewear</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+body { background: #0f0f0f; color: #fff; }
+header { background: #1a1a1a; padding: 20px; text-align: center; border-bottom: 3px solid #d4af37; }
+h1 { font-size: 3.5rem; font-weight: 900; }
+nav { display: flex; justify-content: center; background: #222; padding: 15px; }
+nav a { color: #fff; text-decoration: none; margin: 0 20px; font-weight: 600; text-transform: uppercase; }
+nav a:hover, nav a.active { color: #d4af37; }
+.container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+h2 { text-align: center; margin-bottom: 40px; color: #d4af37; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; }
+.glass-card { background: #1a1a1a; padding: 20px; border-radius: 8px; text-align: center; border: 1px solid #222; }
+.glass-card img { width: 100%; height: 200px; object-fit: contain; background: #252525; border-radius: 4px; }
+.glass-card h3 { margin: 15px 0 5px; }
+.glass-card p { font-size: 0.9rem; color: #888; margin-bottom: 15px; }
+.glass-card .price { font-size: 1.3rem; color: #d4af37; font-weight: bold; }
+</style></head><body>
+
+<header><h1>GET STYLISH WITH US</h1></header>
+<nav>
+<a href="index.html">Home</a>
+<a href="hair.html">Hair Salon</a>
+<a href="fashion.html">Clothes & Shoes</a>
+<a href="eyewear.html" class="active">Glasses</a>
+<a href="booking.html">Booking & Contact</a>
+</nav>
+
+<div class="container">
+<h2>Designer Eyewear & Sunglasses</h2>
+<div class="grid">
+<div class="glass-card"><img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400&fit=crop&q=60" alt="Aviators"><h3>Classic Aviator Sunglasses</h3><p>Timeless golden frame with high-grade UV polarization.</p><div class="price">¥9,800</div></div>
+<div class="glass-card"><img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&fit=crop&q=60" alt="Square"><h3>Matte Black Square Frames</h3><p>Ergonomic fit fitted with protective blue-light filter lenses.</p><div class="price">¥11,000</div></div>
+<div class="glass-card"><img src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=400&fit=crop&q=60" alt="Tortoise"><h3>Vintage Round Tortoiseshell</h3><p>Hand-polished lightweight organic acetate retro profiles.</p><div class="price">¥12,500</div></div>
+<div class="glass-card"><img src="https://images.unsplash.com/photo-1591076482161-42ce6da69f67?w=400&fit=crop&q=60" alt="Clear"><h3>Transparent Clear Frames</h3><p>Modern ultra-minimalist framing to suit every look.</p><div class="price">¥10,000</div></div>
+</div>
+</div></body></html>
+📅 5. booking.html (Online Booking & Contact)
+HTML
+
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GET STYLISH WITH US | Booking & Contact</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+body { background: #0f0f0f; color: #fff; }
+header { background: #1a1a1a; padding: 20px; text-align: center; border-bottom: 3px solid #d4af37; }
+h1 { font-size: 3.5rem; font-weight: 900; }
+nav { display: flex; justify-content: center; background: #222; padding: 15px; }
+nav a { color: #fff; text-decoration: none; margin: 0 20px; font-weight: 600; text-transform: uppercase; }
+nav a:hover, nav a.active { color: #d4af37; }
+.wrapper { max-width: 1000px; margin: 50px auto; padding: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.box { background: #1a1a1a; padding: 30px; border-radius: 8px; border: 1px solid #222; }
+h2 { color: #d4af37; margin-bottom: 20px; }
+.form-group { margin-bottom: 15px; }
+label { display: block; margin-bottom: 5px; color: #ccc; font-size: 0.9rem; }
+input, select, textarea { width: 100%; padding: 10px; background: #2b2b2b; border: 1px solid #444; color: #fff; border-radius: 4px; }
+input:focus, select:focus { border-color: #d4af37; outline: none; }
+.btn-submit { background: #d4af37; color: #000; padding: 12px; width: 100%; font-weight: bold; border: none; border-radius: 4px; cursor: pointer; text-transform: uppercase; margin-top: 10px; }
+.btn-submit:hover { background: #fff; }
+.info-link { color: #d4af37; text-decoration: none; font-weight: bold; }
+.info-item { margin-bottom: 20px; }
+</style></head><body>
+
+<header><h1>GET STYLISH WITH US</h1></header>
+<nav>
+<a href="index.html">Home</a>
+<a href="hair.html">Hair Salon</a>
+<a href="fashion.html">Clothes & Shoes</a>
+<a href="eyewear.html">Glasses</a>
+<a href="booking.html" class="active">Booking & Contact</a>
+</nav>
+
+<div class="wrapper">
+<div class="box">
+<h2>Online Booking</h2>
+<form action="#" method="POST" onsubmit="alert('Appointment Request Submitted!'); return false;">
+<div class="form-group">
+<label>Full Name</label>
+<input type="text" required placeholder="John Doe">
+</div>
+<div class="form-group">
+<label>Service Category</label>
+<select>
+<option>Hair Styling & Barbering</option>
+<option>Wedding/Marriage Package (¥45,000)</option>
+<option>Wardrobe & Fit Session</option>
+</select>
+</div>
+<div class="form-group">
+<label>Appointment Date</label>
+<input type="date" required>
+</div>
+<button type="submit" class="btn-submit">Confirm Booking Slot</button>
+</form>
+</div>
+
+<div class="box" style="border-left: 3px solid #d4af37;">
+<h2>Contact Us</h2>
+<div class="info-item">
+<label>Direct Phone Line</label>
+<p style="font-size: 1.5rem; font-weight: bold; color: #fff;">980000000</p>
+</div>
+<div class="info-item">
+<label>Email Address</label>
+<p><a href="mailto:getstylishwithus@gmail.com" class="info-link">getstylishwithus@gmail.com
+
